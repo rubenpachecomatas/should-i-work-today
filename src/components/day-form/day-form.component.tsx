@@ -5,11 +5,11 @@ const DayFormComponent = (): React.ReactElement => {
   const { day, handleOnChangeDay } = DayFormHook();
 
   return (
-    <div className="flex gap-3 items-center text-blue-100">
+    <div className="flex flex-col gap-3 items-center justify-center text-blue-100">
       <span className="text-3xl font-bold">And what about...</span>
       <form>
         <input
-          className="p-1 rounded-lg text-xl bg-blue-950"
+          className="p-1 rounded-lg text-xl text-center bg-blue-950"
           name="newDay"
           onChange={handleOnChangeDay}
           type="date"
